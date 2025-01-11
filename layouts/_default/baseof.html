@@ -7,6 +7,15 @@
 
 <head>
     {{- partial "head.html" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="title" content="{{ .Title }}">
+    {{ with .Params.image }}
+    <meta property="og:image" content="{{ . }}">
+    {{ end }}
 </head>
 
 <body class="
