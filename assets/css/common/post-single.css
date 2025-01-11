@@ -1,3 +1,19 @@
+.dark {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05)),
+                      linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05));
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-attachment: fixed; /* Ensures the background image is fixed in dark mode as well */
+}
+
+body {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05)),
+                      linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05));
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-attachment: fixed; /* Ensures that the background image is fully displayed and fixed */
+}
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
