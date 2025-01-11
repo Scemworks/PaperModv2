@@ -50,6 +50,8 @@ body {
 
 .source-btn {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     float: right;
     padding: 10px 20px;
     font-size: 14px;
@@ -62,6 +64,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    width: fit-content;
 }
 
 .source-btn:hover {
